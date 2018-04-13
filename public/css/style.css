@@ -48,9 +48,13 @@ footer {
   border-radius: 9px;
   margin-top: 10%;
   background-color: #e0f2f1;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .html {
   min-height:100%
+}
+
+#contact {
+  margin-bottom: 10%
 }

@@ -1,0 +1,52 @@
+[debug] [2018-04-13T03:36:14.894Z] ----------------------------------------------------------------------
+[debug] [2018-04-13T03:36:15.005Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Britt\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-04-13T03:36:15.006Z] CLI Version:   3.17.7
+[debug] [2018-04-13T03:36:15.006Z] Platform:      win32
+[debug] [2018-04-13T03:36:15.006Z] Node Version:  v8.9.4
+[debug] [2018-04-13T03:36:15.055Z] Time:          Thu Apr 12 2018 21:36:15 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-04-13T03:36:15.055Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-13T03:36:15.254Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-13T03:36:15.257Z] > authorizing via signed-in user
+[debug] [2018-04-13T03:36:15.259Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-13T03:36:15.260Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/2m8ZkNS1UpTQGUU2iyZw5LQ2GFP0gJovqlglzlZ9Iq4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Apr 12 2018 21:36:15 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-04-13T03:36:15.661Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-13T03:36:15.899Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-200014  
+  
+ Thu Apr 12 2018 21:36:15 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-04-13T03:36:16.699Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-13T03:36:16.699Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-200014/tokens  
+  
+ Thu Apr 12 2018 21:36:16 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-04-13T03:36:17.115Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-200014'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-04-13T03:36:22.187Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-200014/uploads/-L9x3nAKAcP4ZP2ctbIi?fileCount=179&message=  
+  
+ Thu Apr 12 2018 21:36:22 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-04-13T03:36:31.941Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-13T03:36:31.942Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] +  hosting: 179 files uploaded successfully
+[debug] [2018-04-13T03:36:33.205Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/portfolio-200014/releases  
+ { hosting: 
+   { public: 'public',
+     ignore: [ 'firebase.json', '**/.*', '**/node_modules/**' ],
+     version: '-L9x3nAKAcP4ZP2ctbIi',
+     prefix: '-L9x3nAKAcP4ZP2ctbIi/',
+     manifest: [] } } 
+ Thu Apr 12 2018 21:36:33 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-04-13T03:36:34.172Z] <<< HTTP RESPONSE 200
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/portfolio-200014/overview
+[info] Hosting URL: https://portfolio-200014.firebaseapp.com
